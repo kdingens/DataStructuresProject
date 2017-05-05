@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/ichiban"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Ichiban Golden Dragon"
+        android:onClick="sendIchiban"/>
+
+    <Button
+        android:id="@+id/thai"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Cambodian Thai"
+        android:onClick="sendCambodian"/>
+
+    <Button
+        android:id="@+id/pits"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Pits BBQ"
+        android:onClick="sendPits"/>
+
+    <Button
+        android:id="@+id/emporium"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Emporium"
+        android:onClick="sendEmporium"/>
+
+    <Button
+        android:id="@+id/mango"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Mango Cafe"
+        android:onClick="sendMango"/>
+
+    <Button
+        android:id="@+id/tippecanoe"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Tippecanoe"
+        android:onClick="sendTippecanoe"/>
+
+    <Button
+        android:id="@+id/taphouse"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Taphouse on the Edge"
+        android:onClick="sendTaphouse"/>
+
+    <Button
+        android:id="@+id/carmelas"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Carmela's Restaurant"
+        android:onClick="sendCarmelas"/>
+
+</LinearLayout>
