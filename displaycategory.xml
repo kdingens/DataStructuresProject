@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendRestaurant"
+        android:tag="restaurant"
+        android:text="Restaurant"/>
+
+    <Button
+        android:id="@+id/bakery"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendBakery"
+        android:text="Bakery"/>
+
+    <Button
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendBar"
+        android:tag="bar"
+        android:text="Bar"/>
+
+    <Button
+        android:id="@+id/cafe"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendCafe"
+        android:tag="cafe"
+        android:text="Cafe"/>
+
+    <Button
+        android:id="@+id/grocery"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendGrocery"
+        android:tag="grocery"
+        android:text="Grocery"/>
+
+    <Button
+        android:id="@+id/takeaway"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendTakeAway"
+        android:tag="takeaway"
+        android:text="Takeaway"/>
+
+    <Button
+        android:id="@+id/delivery"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:onClick="sendDelivery"
+        android:tag="delivery"
+        android:text="Delivery"/>
+
+</LinearLayout>
