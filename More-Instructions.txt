@@ -1,0 +1,43 @@
+Run Emulator on a Google Pixel regular size
+
+The files in this repository belong in specific folders within the application in Android Studio.
+"AppName" -> app -> src -> main -> java -> com -> example -> "user" -> "AppName" -> :
+  detailsParser.java
+  DisplayCategory.java
+  DisplayMessageActivity.java
+  DisplayOnCampus.java
+  DisplayPopular
+  DisplayRestaurant
+  DisplayWebView
+  DownloadImage
+  getData
+  jsonParser
+  MainActivity
+  
+"AppName" -> app -> src -> main -> res -> layout -> :
+  grayround.xml
+  greenround.xml
+  navyround.xml
+  redround.xml
+  round.xml
+  
+"AppName" -> app -> src -> main -> res -> layout -> :
+  activity_display_message.xml
+  activity_main.xml
+  dislayresults.xml
+  displaycategory.xml
+  displayoncampus.xml
+  displaypopular.xml
+  displayrecommended.xml
+  displayrestaurant.xml
+  displaywebview.xml
+  listlayout.xml
+
+"AppName" -> app -> src -> main -> res -> values -> :
+  colors.xml
+  strings.xml
+  styles.xml
+
+"AppName" -> app -> src -> main -> :
+  AndroidManifest.xml
+  
