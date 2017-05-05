@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/chipotle"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Chipotle"
+        android:onClick="sendChipotle"/>
+
+    <Button
+        android:id="@+id/roccos"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Rocco's Pizza"
+        android:onClick="sendRoccos"/>
+
+    <Button
+        android:id="@+id/blaze"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Blaze Pizza"
+        android:onClick="sendBlaze"/>
+
+    <Button
+        android:id="@+id/fiveguys"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Five Guys"
+        android:onClick="sendFive"/>
+
+    <Button
+        android:id="@+id/nicks"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Nick's Patio"
+        android:onClick="sendNicks"/>
+
+    <Button
+        android:id="@+id/simply"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Simply Pressed"
+        android:onClick="sendSimply"/>
+
+    <Button
+        android:id="@+id/salsas"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Salsa's Mexican Grill"
+        android:onClick="sendSalsas"/>
+
+    <Button
+        android:id="@+id/evil"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="Evil Czech Brewery"
+        android:onClick="sendEvil"/>
+
+</LinearLayout>
