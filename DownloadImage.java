@@ -1,3 +1,17 @@
+package com.example.kevindingens.firstapplication;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+import android.util.Log;
+import android.widget.ImageView;
+
+import java.io.InputStream;
+
+/**
+ * Created by kevindingens on 4/30/17.
+ */
+
 public class DownloadImage extends AsyncTask<String, Void, Bitmap> {
     ImageView bmImage;
 
