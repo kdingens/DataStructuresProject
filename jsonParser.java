@@ -1,3 +1,15 @@
+ package com.example.kevindingens.firstapplication;
+
+import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/**
+ * Created by kevindingens on 4/29/17.
+ */
+
 public class jsonParser {
     public String getTitle (JSONObject a, int b) throws JSONException {
         JSONArray results = a.getJSONArray("results");
@@ -9,11 +21,40 @@ public class jsonParser {
         }
     }
 
+    public String getRating (JSONObject a, int b) throws JSONException{
+        JSONArray results = a.getJSONArray("results");
+        JSONObject result = results.getJSONObject(b);
+        String placeid ="--";
+        if(result.has("rating"))
+            placeid = results.getJSONObject(b).getString("rating");
+        return placeid;
+    }
+
+    public String getPriceLevel (JSONObject a, int b) throws JSONException{
+        JSONArray results = a.getJSONArray("results");
+        JSONObject result = results.getJSONObject(b);
+        String placeid ="--";
+        if(result.has("price_level"))
+            placeid = result.getString("price_level");
+        return placeid;
+    }
+
+    public String getDetailKey (JSONObject a, int b) throws JSONException{
+        JSONArray results = a.getJSONArray("results");
+        String placeid = results.getJSONObject(b).getString("place_id");
+        return placeid;
+    }
+
     public String getImage (JSONObject a, int b) throws JSONException{
         JSONArray results = a.getJSONArray("results");
-        JSONArray photos = results.getJSONObject(b).getJSONArray("photos");
-        String photoref = photos.getJSONObject(0).getString("photo_reference");
-        return photoref;
+        JSONObject result = results.getJSONObject(b);
+        if(result.has("photos")) {
+            JSONArray photos = result.getJSONArray("photos");
+            String photoref = photos.getJSONObject(0).getString("photo_reference");
+            return photoref;
+        }
+        else
+            return "none";
     }
 
     public int getSize(JSONObject a) throws JSONException {
